@@ -1,0 +1,208 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef2f7;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* ===== BUTTON UMUM ===== */
+a, button {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+    color: #fff;
+}
+
+/* ===== LOGIN ===== */
+.login-box {
+    max-width: 320px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.login-box button {
+    display: block;
+    width: 70%;
+    margin: 25px auto 0;
+    background: #1976d2;
+}
+
+/* ===== TOMBOL ATAS ===== */
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===== WARNA TOMBOL ===== */
+.btn-primary,
+.btn-tambah_kendaraan,
+.btn-simpan {
+    background: #1976d2;
+}
+
+.btn-primary:hover,
+.btn-tambah_kendaraan:hover,
+.btn-simpan:hover {
+    background: #125aa0;
+}
+
+/* ===== TOMBOL KHUSUS ===== */
+.btn-logout {
+    background: #ff0904;
+}
+
+.btn-logout:hover {
+    background: #c40602;
+}
+
+.btn-kembali {
+    background: #6a1b9a;
+}
+
+.btn-kembali:hover {
+    background: #4a148c;
+}
+
+.btn-warning {
+    background: #f57c00;
+    padding: 6px 10px;
+}
+
+.btn-warning:hover {
+    background: #e65100;
+}
+
+/* Tombol Simpan Full */
+.btn-simpan {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Tombol disable */
+button:disabled {
+    background: #90a4ae !important;
+    cursor: not-allowed;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    background: #1976d2;
+    color: #fff;
+    padding: 10px;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #f1f7ff;
+}
+
+/* ===== FORM ===== */
+.form-box {
+    max-width: 450px;
+    margin: auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+/* ===== STRUK ===== */
+.struk-body {
+    width: 58mm;
+    margin: auto;
+    font-family: monospace;
+    font-size: 12px;
+    background: #fff;
+}
+
+.struk-center {
+    text-align: center;
+}
+
+.struk-body hr {
+    border: none;
+    border-top: 1px dashed #000;
+}
+
+/* ===== PRINT ===== */
+@media print {
+    body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .struk-body {
+        width: 58mm;
+        margin: auto;
+    }
+
+    @page {
+        size: 58mm auto;
+        margin: 0;
+    }
+}
